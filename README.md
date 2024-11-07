@@ -37,7 +37,7 @@ cd Krb5KeyGen
 To run **Krb5KeyGen**, use the following syntax:
 
 ```bash
-python krb5_key_gen.py <username> <password> <domain> [--iterations <iterations>]
+python krb5_keygen.py <username> <password> <domain> [--iterations <iterations>]
 ```
 
 - `<username>`: The case-sensitive username (e.g., `Administrator` is different from `administrator`).
@@ -50,13 +50,13 @@ python krb5_key_gen.py <username> <password> <domain> [--iterations <iterations>
 Generate keys with the default iteration count (4096):
 
 ```bash
-python krb5_key_gen.py alice "mypassword123" contoso.local
+python krb5_keygen.py alice "mypassword123" contoso.local
 ```
 
 Generate keys with a custom iteration count:
 
 ```bash
-python krb5_key_gen.py alice "mypassword123" contoso.local --iterations 5000
+python krb5_keygen.py alice "mypassword123" contoso.local --iterations 5000
 ```
 
 ### Output
@@ -68,7 +68,7 @@ The output will include the following:
 - **AES256 Key**: AES 256-bit key for Kerberos.
 
 ```bash
-$> python .\krb5_key_gen.py javier password contoso.local
+$> python .\krb5_keygen.py javier password contoso.local
 Key NTLM (RC4-HMAC): 8846f7eaee8fb117ad06bdd830b7586c
 Key AES128: 87e00e150694edbf7cedbc4d0ccbca5f
 Key AES256: c59c4adaaf06d6758b825e088178aa9fa66639b4dc3b160a6b347704dfd64b9e
